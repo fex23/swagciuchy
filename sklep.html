@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep</title>
+    <style>
+        /* Ogólny styl dla strony */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        /* Styl nagłówka */
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+
+        /* Styl tekstu powitalnego */
+        p {
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        /* Styl kontenera dla produktów */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Styl pojedynczego produktu */
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styl dla obrazka produktu */
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            cursor: pointer; /* Zmienia kursor na wskaźnik */
+        }
+
+        /* Styl dla nazwy produktu */
+        .product h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Styl dla ceny */
+        .product .price {
+            color: #0a74da;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Styl dla przycisku zakupu */
+        .product button {
+            padding: 10px 20px;
+            background-color: #0a74da;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Witaj w naszym sklepie!</h1>
+    <p>Tanio, bezpiecznie, szybko.</p>
+
+    <!-- Sekcja produktów -->
+    <div class="products">
+        <!-- Produkt 1 -->
+        <div class="product">
+            <a href="produkt1.html"> <!-- Link do strony szczegółów produktu -->
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRYqKRI9ObcmO2g3X05CTvOF54EeB_oX_DEIfJB-SS_SiW6pifI-dns2m0YFPn8FZF_W2SBjKbyFYsgvmXsnIa3vSkufFnyAw5Cg5ph3YiKdMfwot-1bMU3sPnZF8_DBwPAYMNnWg&usqp=CAc" alt="Produkt 1">
+            </a>
+            <h3>Spodnie Carhartt WIP Brandon</h3>
+            <p class="price">149,99 PLN</p>
+            <a href="produkt1.html"> <!-- Link do strony szczegółów produktu -->
+                <button>Więcej informacji</button>
+            </a>
+        </div>
+
+        <!-- Produkt 2 -->
+        <div class="product">
+            <a href="produkt2.html">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRAOcQkQBPQRXiaNrsNGswvFwdutnhvQcDHTRNv4vyHktevr6Udex6mRAllJDJlFPkF_erxajyR5KUGprYNf6A_VrGcs9ssuhGn6cbr610espKqx2RV9ojKeE2Q3FBMuSO-tKLW9Q&usqp=CAc" alt="Produkt 2">
+            </a>
+            <h3>Spodnie Dickies Madison</h3>
+            <p class="price">119,99 PLN</p>
+            <a href="produkt2.html">
+                <button>Więcej informacji</button>
+            </a>
+        </div>
+
+        <!-- Produkt 3 -->
+        <div class="product">
+            <a href="produkt3.html">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTEAbgqVPHvF7C11gSEXlIO94lm387VFzBEdiwIYCyL9ZpNuifHNQ7HvrTBTVxEmAcfEX5Wm9NZtn45Zna_pocuTLWdafAU2_JULvohmR2l6uXxjkC2F07nx-dCdgbliT8zhxhaxTM&usqp=CAc" alt="Produkt 3">
+            </a>
+            <h3>Spodnie Dickies 874 Work</h3>
+            <p class="price">199,99 PLN</p>
+            <a href="produkt3.html">
+                <button>Więcej informacji</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
